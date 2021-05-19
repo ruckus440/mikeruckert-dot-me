@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	background-color: midnightblue;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100%;
+	width: 100%; */
+}
+
+.greeting {
+	color: mintcream;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
