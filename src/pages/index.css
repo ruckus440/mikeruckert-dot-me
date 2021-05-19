@@ -2,7 +2,8 @@
 
 body {
 	font-family: sans-serif;
-	margin: 0;
+	margin: auto;
 	background-color: rgb(57, 105, 211);
 	font-family: 'Roboto Mono', monospace;
+	max-width: 1400px;
 }
