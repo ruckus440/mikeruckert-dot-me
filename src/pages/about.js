@@ -1,15 +1,14 @@
 import React from 'react';
-import MainNavigation from '../layout/MainNavigation';
+import Layout from '../components/Layout';
 
-const About = () => {
+const about = () => {
 	return (
-		<React.Fragment>
-			<MainNavigation />
+		<Layout>
 			<div>
-				<p>this is the about page</p>
+				<h2>This is the about page.</h2>
 			</div>
-		</React.Fragment>
+		</Layout>
 	);
 };
 
-export default About;
+export default about;
