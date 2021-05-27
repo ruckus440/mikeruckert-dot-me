@@ -1,21 +1,13 @@
-* {
-	box-sizing: border-box;
-}
-
-.container {
-	background-color: midnightblue;
-}
-
-.main {
+/* .main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	/* height: 100%;
 	width: 100%; */
-}
+/* } */
 
 .greeting {
-	color: mintcream;
+	color: white;
 	position: absolute;
 	top: 50%;
 	left: 50%;
