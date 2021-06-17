@@ -7,9 +7,9 @@ const Layout = (props) => {
 		<div className="layout">
 			<Navbar />
 			<div className="content">{props.children}</div>
-			<footer>
+			{/* <footer>
 				<p>Copyright 2021 Mike Ruckert</p>
-			</footer>
+			</footer> */}
 		</div>
 	);
 };

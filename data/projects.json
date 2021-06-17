@@ -1,0 +1,23 @@
+[
+	{
+		"title": "My Project",
+		"slug": "project1",
+		"url": "https://example.com",
+		"image": "./images/project (1).png",
+		"description": "I built this to show off my sweet skills."
+	},
+	{
+		"title": "Another Project",
+		"slug": "project2",
+		"url": "https://example.org",
+		"image": "./images/project (2).png",
+		"description": "I built this to show off my sweet stuff."
+	},
+	{
+		"title": "Third Project",
+		"slug": "project3",
+		"url": "https://example.com",
+		"image": "./images/project (3).png",
+		"description": "I built this to show off my sweet style."
+	}
+]

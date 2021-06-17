@@ -21,12 +21,12 @@ const Navbar = () => {
 						<Link to="/about" activeStyle={activeStyle}>
 							About
 						</Link>
-					</li>
+					</li>*/}
 					<li>
 						<Link to="/projects" activeStyle={activeStyle}>
 							Projects
 						</Link>
-					</li> */}
+					</li>
 				</ul>
 			</nav>
 		</header>

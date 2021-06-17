@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	font-family: 'Roboto Mono', monospace;
-	color: white;
+	/* color: white; */
 }
 
 html,
@@ -44,6 +44,6 @@ footer {
 
 footer p {
 	text-align: center;
-	/* color: #bbb; */
+	color: white;
 	margin: 30px auto;
 }

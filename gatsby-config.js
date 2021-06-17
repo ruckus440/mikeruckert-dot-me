@@ -10,8 +10,18 @@ module.exports = {
 			},
 		},
 		'gatsby-plugin-react-helmet',
-
+		'gatsby-plugin-image',
 		`gatsby-plugin-sharp`,
+		'gatsby-transformer-sharp',
+
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'project',
+				path: './data',
+			},
+		},
+		'gatsby-transformer-json',
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
