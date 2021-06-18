@@ -6,12 +6,12 @@ import { getImage } from 'gatsby-plugin-image';
 
 export const query = graphql`
 	query ($slug: String!) {
-		projectsJson(slug: { eq: $slug }) {
+		sanityProject(slug: { current: { eq: $slug } }) {
 			title
 			description
 			url
 			image {
-				childImageSharp {
+				asset {
 					gatsbyImageData(width: 400, placeholder: BLURRED)
 				}
 			}
@@ -20,7 +20,7 @@ export const query = graphql`
 `;
 
 const ProjectTemplate = ({ data }) => {
-	const project = data.projectsJson;
+	const project = data.sanityProject;
 
 	return (
 		<Layout>
@@ -28,7 +28,7 @@ const ProjectTemplate = ({ data }) => {
 				title={project.title}
 				description={project.description}
 				url={project.url}
-				imageData={getImage(project.image)}
+				imageData={getImage(project.image.asset)}
 			/>
 			{/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
 		</Layout>

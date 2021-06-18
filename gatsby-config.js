@@ -4,6 +4,14 @@ module.exports = {
 	},
 	plugins: [
 		{
+			resolve: `gatsby-source-sanity`,
+			options: {
+				projectId: '4w2jqh5b',
+				dataset: 'production',
+				watchMode: true,
+			},
+		},
+		{
 			resolve: 'gatsby-plugin-google-analytics',
 			options: {
 				trackingId: 'UA-197488206-1',
@@ -14,13 +22,6 @@ module.exports = {
 		`gatsby-plugin-sharp`,
 		'gatsby-transformer-sharp',
 
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'project',
-				path: './data',
-			},
-		},
 		'gatsby-transformer-json',
 		{
 			resolve: `gatsby-plugin-manifest`,

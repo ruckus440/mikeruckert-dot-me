@@ -23,6 +23,7 @@
     "gatsby-plugin-react-helmet": "^4.5.0",
     "gatsby-plugin-sharp": "^3.7.1",
     "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-source-sanity": "^7.0.7",
     "gatsby-transformer-json": "^3.7.1",
     "gatsby-transformer-sharp": "^3.7.1",
     "react": "^17.0.1",

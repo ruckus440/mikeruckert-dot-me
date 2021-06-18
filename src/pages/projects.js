@@ -4,18 +4,22 @@ import ProjectPreview from '../components/ProjectPreview';
 import { graphql, useStaticQuery } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image'; ///dist/src/components/gatsby-image.browser';
 
+const sanityConfig = { projectId: '4w2jqh5b', dataset: 'production' };
+
 const Projects = () => {
 	const data = useStaticQuery(graphql`
 		{
-			allProjectsJson {
+			allSanityProject {
 				edges {
 					node {
 						title
-						slug
-						url
 						description
+						url
+						slug {
+							current
+						}
 						image {
-							childImageSharp {
+							asset {
 								gatsbyImageData(width: 200, placeholder: BLURRED)
 							}
 						}
@@ -25,7 +29,11 @@ const Projects = () => {
 		}
 	`);
 
-	const projects = data.allProjectsJson.edges;
+	if (data.errors) {
+		throw data.errors;
+	}
+
+	const projects = data.allSanityProject.edges;
 
 	return (
 		<Layout>
@@ -38,8 +46,8 @@ const Projects = () => {
 						key={project.slug}
 						title={project.title}
 						description={project.description}
-						imageData={getImage(project.image)}
-						slug={project.slug}
+						imageData={getImage(project.image.asset)}
+						slug={project.slug.current}
 					/>
 				);
 			})}
@@ -48,3 +56,21 @@ const Projects = () => {
 };
 
 export default Projects;
+
+// {
+// 	allProjectsJson {
+// 		edges {
+// 			node {
+// 				title
+// 				slug
+// 				url
+// 				description
+// 				image {
+// 					childImageSharp {
+// 						gatsbyImageData(width: 200, placeholder: BLURRED)
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
