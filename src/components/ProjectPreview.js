@@ -1,21 +1,23 @@
 import React from 'react';
 import { Link } from 'gatsby';
-// import Image from 'gatsby-image';
-import { GatsbyImage } from 'gatsby-plugin-image'; ///dist/src/components/gatsby-image.browser';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import * as classes from './ProjectPreview.module.css';
 
 const ProjectPreview = (props) => {
 	return (
-		<div>
-			<Link to={`/${props.slug}/`}>
+		<div className={classes.preview}>
+			<Link to={`/${props.slug}/`} className={classes.image}>
 				<GatsbyImage image={props.imageData} alt={props.title} />
 			</Link>
-			<h2>
-				<Link to={`/${props.slug}/`}>{props.title}</Link>
-			</h2>
-			<p>{props.description}</p>
-			<p>
-				<Link to={`/${props.slug}/`}>View this project &rarr;</Link>
-			</p>
+			<div className={classes.info}>
+				<h3>
+					<Link to={`/${props.slug}/`}>{props.title}</Link>
+				</h3>
+				<p className={classes.description}>{props.description}</p>
+				<p>
+					<Link to={`/${props.slug}/`}>View this project &rarr;</Link>
+				</p>
+			</div>
 		</div>
 	);
 };

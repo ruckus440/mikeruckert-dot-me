@@ -1,8 +1,18 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
 footer {
-	position: fixed;
+	/* flex-shrink: 0; */
 	width: 100%;
-	left: 0;
-	bottom: 0;
+	height: 50px;
 	text-align: center;
+	font-size: 90%;
 	color: white;
 }

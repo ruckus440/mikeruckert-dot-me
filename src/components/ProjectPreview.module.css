@@ -1,0 +1,49 @@
+.preview {
+	margin: auto;
+	padding: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.image {
+	grid-column: 1;
+	justify-self: right;
+	margin-right: 10%;
+}
+
+.info {
+	grid-column: 2;
+	align-self: center;
+}
+
+.info a {
+	color: white;
+}
+
+.info p {
+	color: white;
+}
+
+.description {
+	position: relative;
+	height: 4.5em;
+	overflow: hidden;
+	width: 75%;
+	margin-left: 0;
+}
+
+.description:after {
+	content: '';
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 70%;
+	height: 1.5em;
+	background: linear-gradient(
+		to right,
+		rgba(34, 34, 34, 0),
+		rgba(34, 34, 34, 1) 50%
+	);
+}

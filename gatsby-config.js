@@ -17,11 +17,16 @@ module.exports = {
 				trackingId: 'UA-197488206-1',
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-layout',
+			options: {
+				component: require.resolve('./src/components/Layout'),
+			},
+		},
 		'gatsby-plugin-react-helmet',
 		'gatsby-plugin-image',
 		`gatsby-plugin-sharp`,
 		'gatsby-transformer-sharp',
-
 		'gatsby-transformer-json',
 		{
 			resolve: `gatsby-plugin-manifest`,
@@ -35,7 +40,7 @@ module.exports = {
 				// see https://developers.google.com/web/fundamentals/web-app-manifest/#display
 				display: `standalone`,
 
-				icon: `src/images/bluer.png`,
+				icon: `src/images/favicon-16x16.png`,
 			},
 		},
 	],

@@ -1,20 +1,19 @@
 header {
 	width: 100%;
-	height: 5rem;
+	height: 6.5rem;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 0 5%;
-	align-items: center;
+	align-items: start;
 	border-bottom: solid white;
 }
 
 .logo {
-	font-size: 2rem;
-	color: white;
-	justify-self: stretch;
+	overflow-y: visible;
 }
 
 nav {
+	margin-top: 60px;
 	justify-self: end;
 }
 
@@ -39,6 +38,10 @@ nav a:hover,
 nav a:active,
 nav .active {
 	border-bottom: solid 2px white;
+	color: #e6fcfc;
+}
+
+nav a {
 	color: #e6fcfc;
 }
 
