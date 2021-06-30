@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import * as classes from './Navbar.module.css';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
+import logo from '../../images/R-192x192.png';
 
 const Navbar = () => {
 	const activeStyle = {
@@ -12,11 +13,11 @@ const Navbar = () => {
 		<header>
 			<div className={classes.logo}>
 				<Link to="/">
-					<StaticImage
-						src="..\..\images\R-192x192.png"
+					<img
+						src={logo}
 						// src="src\images\R-192x192.png"
 						alt="Home"
-						placeholder="blurred"
+						// placeholder="blurred"
 					/>
 				</Link>
 			</div>
