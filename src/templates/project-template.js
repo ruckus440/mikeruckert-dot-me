@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 import Project from '../components/Project';
 import { getImage } from 'gatsby-plugin-image';
 
@@ -23,15 +22,13 @@ const ProjectTemplate = ({ data }) => {
 	const project = data.sanityProject;
 
 	return (
-		<Layout>
-			<Project
-				title={project.title}
-				description={project.description}
-				url={project.url}
-				imageData={getImage(project.image.asset)}
-			/>
-			{/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
-		</Layout>
+		<Project
+			title={project.title}
+			description={project.description}
+			url={project.url}
+			imageData={getImage(project.image.asset)}
+		/>
+		// {/* <pre>{JSON.stringify(project, null, 2)}</pre> */}
 	);
 };
 
