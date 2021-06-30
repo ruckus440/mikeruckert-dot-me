@@ -3,12 +3,16 @@
 
 	padding: '96px';
 	font-family: '-apple-system, Roboto, sans-serif, serif';
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .headingStyles {
-	margin-top: 0;
-	margin-bottom: 64;
-	max-width: 320;
+	/* margin-top: 0; */
+	/* margin-bottom: 64; */
+	/* max-width: 320; */
 }
 
 .paragraphStyles {

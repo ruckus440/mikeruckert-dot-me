@@ -13,7 +13,8 @@ const Navbar = () => {
 			<div className={classes.logo}>
 				<Link to="/">
 					<StaticImage
-						src="..\images\R-192x192.png"
+						src="..\..\images\R-192x192.png"
+						// src="src\images\R-192x192.png"
 						alt="Home"
 						placeholder="blurred"
 					/>

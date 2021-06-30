@@ -40,7 +40,7 @@ module.exports = {
 				// see https://developers.google.com/web/fundamentals/web-app-manifest/#display
 				display: `standalone`,
 
-				icon: `src/images/favicon-16x16.png`,
+				icon: `images/favicon-16x16.png`,
 			},
 		},
 	],
